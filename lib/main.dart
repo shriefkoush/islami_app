@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:islami/Home_Screen.dart';
+import 'package:islami/home/Home_Screen.dart';
 import 'package:islami/MyThemeData.dart';
 
 void main (){
