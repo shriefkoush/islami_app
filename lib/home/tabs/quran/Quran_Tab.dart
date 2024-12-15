@@ -60,7 +60,10 @@ class Quran_Tab extends StatelessWidget {
             },
             itemBuilder: (context,index){
               return InkWell(onTap: (){
-                Navigator.of(context).pushNamed(SuraDetailsScreen.routeName);
+                Navigator.of(context).pushNamed(SuraDetailsScreen.routeName,
+                arguments: Sura_Model.getSuraModel(index)
+                );
+
               },
               child: SuraListWidget(
                 sura_model: Sura_Model.getSuraModel(index),
