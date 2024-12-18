@@ -1,6 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:islami/AppColors.dart';
+import 'package:islami/home/tabs/hadeth/Hadeth_Tab.dart';
+import 'package:islami/home/tabs/quran/Quran_Tab.dart';
+import 'package:islami/home/tabs/radio/Radio_Tab.dart';
+import 'package:islami/home/tabs/sebha/Sebha_Tab.dart';
+import 'package:islami/home/tabs/time/Time_Tab.dart';
 
 class HomeScreen extends StatefulWidget {
   static const String routeName = "HomeScreen";
@@ -19,6 +24,12 @@ class _HomeScreenState extends State<HomeScreen> {
         "assets/images/time_bg.png"
   ];
 
+  List<Widget> Tabs =[
+    Quran_Tab(),
+    Hadeth_Tab(),
+    Sebha_Tab(),
+    Radio_Tab(),
+    Time_Tab()];
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -56,6 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
             ],
           ),
+          body: Tabs[selectIndex],
         )
       ],
     );
