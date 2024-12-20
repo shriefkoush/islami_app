@@ -4,7 +4,8 @@ import 'package:islami/model/Sura_Model.dart';
 
 class SuraListWidget extends StatelessWidget {
   Sura_Model sura_model;
-  SuraListWidget({required this.sura_model
+  int index;
+  SuraListWidget({required this.sura_model,required this.index
   });
   @override
   Widget build(BuildContext context) {
@@ -12,7 +13,7 @@ class SuraListWidget extends StatelessWidget {
       Stack(alignment: Alignment.center,
       children: [
         Image.asset("assets/images/VectorNumber.png"),
-        Text("${sura_model.index+1}"
+        Text("${index+1}"
           ,style: TextStyle(color: AppColors.whiteColor),),
       ],),
       SizedBox(width: 15,),
