@@ -20,7 +20,7 @@ class _Sebha_TabState extends State<Sebha_Tab> {
   List<String> sebhaText = [
     "الله اكبر ",
         "الحمدلله",
-    "لا حول ولا قوة الا بالله"
+    "سبحان الله"
   ];
   @override
   Widget build(BuildContext context) {
